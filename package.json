@@ -1,0 +1,13 @@
+{
+  "name": "test-gcba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gcba/obelisco": "^1.48.1"
+  },
+  "devDependencies": {}
+}
