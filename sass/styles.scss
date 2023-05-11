@@ -1,0 +1,31 @@
+.hero {
+  .main-banner {
+    background-image: url('https://images.pexels.com/photos/13143530/pexels-photo-13143530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 2rem 0;
+
+    .container {
+      color: white;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.panels div:nth-of-type(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1000px) {
+  .panels div:nth-of-type(even) {
+    flex-direction: column;
+  }
+}
+
+.main-content {
+  padding: 3rem 0 6rem;
+}
