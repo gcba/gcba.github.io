@@ -1,27 +1,49 @@
-.hero .main-banner {
-  background-image: url("https://images.pexels.com/photos/13143530/pexels-photo-13143530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  padding: 2rem 0;
-}
-.hero .main-banner .container {
-  color: white;
-}
-.hero .main-banner .container h1 {
-  font-size: 3rem;
+@charset "UTF-8";
+html, body {
+  scroll-behavior: smooth; /* Habilita el scroll suave en los navegadores que lo soportan */
 }
 
-.panels div:nth-of-type(even) {
-  display: flex;
-  flex-direction: row-reverse;
+section {
+  scroll-margin-top: 125px; /* Altura adicional para desplazarse más abajo */
+  scroll-behavior: smooth;
 }
-
-@media (max-width: 1000px) {
-  .panels div:nth-of-type(even) {
-    flex-direction: column;
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 80px;
   }
 }
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header-logo-obelisco {
+  width: 8rem;
+}
+
+.hero .main-banner {
+  background-image: url("../img/hero/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  min-height: 280px;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .hero .main-banner {
+    background-image: url("../img/hero/Mobile-Portada-Header.png");
+    padding-bottom: 0;
+  }
+}
+.hero .main-banner .hero-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 .main-content {
   padding: 3rem 0 6rem;
 }
