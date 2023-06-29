@@ -3,6 +3,10 @@ html, body {
   scroll-behavior: smooth; /* Habilita el scroll suave en los navegadores que lo soportan */
 }
 
+.main-body {
+  overflow-x: hidden;
+}
+
 section {
   scroll-margin-top: 125px; /* Altura adicional para desplazarse más abajo */
   scroll-behavior: smooth;
@@ -25,7 +29,7 @@ section {
 }
 
 .hero .main-banner {
-  background-image: url("../img/hero/hero.png");
+  background-image: url("../img/hero/hero.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
