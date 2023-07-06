@@ -6,11 +6,15 @@ html, body {
 }
 
 section {
-  scroll-margin-top: 125px; /* Altura adicional para desplazarse más abajo */
+  scroll-margin-top: 110px;
   scroll-behavior: smooth;
-
-  @media (max-width: 768px) {
-    scroll-margin-top: 80px;
+  @media (max-width: 767px) {
+    scroll-margin-top: 80px; /* Espacio superior de desplazamiento para compensar el encabezado */
+  }
+}
+@media (max-width: 767px) {
+  #seccion-nosotros {
+    margin-top: 90px; /* Espacio superior para separar del encabezado */
   }
 }
 
@@ -19,6 +23,15 @@ section {
   top: 0;
   width: 100%;
   z-index: 9999;
+
+  .container {
+    @media (max-width: 1160px) {
+      max-width: 720px;
+    }
+    @media (max-width: 592px) {
+      max-width: 560px;
+    }
+  }
 }
 
 .header-logo-obelisco {
@@ -34,8 +47,8 @@ section {
     min-height: 280px;
     padding-bottom: 1.5rem;
 
-    @media (max-width: 768px) {
-      background-image: url('../img/hero/Mobile-Portada-Header.png');
+    @media (max-width: 1100px) {
+      background-image: url('../img/hero/Mobile-Portada-Header.svg');
       padding-bottom: 0;
     }
 
@@ -44,6 +57,42 @@ section {
       flex-wrap: wrap;
       gap: 15px;
     }
+
+    @keyframes wave {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    
+    .card {
+      animation: wave 1s infinite;
+    }
+    
+    .delay-1 {
+      animation-delay: 0.1s;
+    }
+    
+    .delay-2 {
+      animation-delay: 0.2s;
+    }
+    
+    .delay-3 {
+      animation-delay: 0.3s;
+    }
+    
+    .delay-4 {
+      animation-delay: 0.4s;
+    }
+    
+    .delay-5 {
+      animation-delay: 0.5s;
+    }    
   }
 }
 
@@ -54,4 +103,8 @@ section {
 .object-profile {
   object-fit: cover;
   object-position: top;
+}
+
+.footer-text {
+  color: #38485c;
 }
