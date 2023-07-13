@@ -57,6 +57,7 @@ section {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
+      margin-top: 0.5rem;
       @media (max-width: 540px) {
         display: none;
       }
