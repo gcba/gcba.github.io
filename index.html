@@ -1,401 +1,300 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DGEDIG</title>
-    <link
-      rel="stylesheet"
-      href="./node_modules/@gcba/obelisco/dist/obelisco.css"
-    />
-    <link rel="icon" type="image/png" href="./img/favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="navbar navbar-light sticky-header">
-      <!-- navbar-lg -->
-      <div class="container">
-        <img
-          class="header-logo-obelisco"
-          src="img/header/Obelisco-logo.svg"
-          alt="Ciudad de Buenos Aires"
-        />
-        <button
-          class="navbar-toggler collapsed"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a href="#seccion-obelisco" class="nav-link">
-                <span>Qué es obelisco</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#seccion-herramientas" class="nav-link"
-                ><span>Herramientas</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#seccion-nosotros" class="nav-link"
-                ><span>Quiénes somos</span></a
-              >
-            </li>
-            <!-- <li class="nav-item">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DGEDIG</title>
+  <link rel="stylesheet" href="node_modules/@gcba/obelisco/dist/obelisco.css" />
+  <link rel="icon" type="image/png" href="./img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar navbar-light sticky-header">
+    <!-- navbar-lg -->
+    <div class="container">
+      <img class="header-logo-obelisco" src="img/header/Obelisco-logo.svg" alt="Ciudad de Buenos Aires" />
+      <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#seccion-obelisco" class="nav-link">
+              <span>Qué es obelisco</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#seccion-herramientas" class="nav-link"><span>Herramientas</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#seccion-nosotros" class="nav-link"><span>Quiénes somos</span></a>
+          </li>
+          <!-- <li class="nav-item">
               <a href="#seccion-comunidad" class="nav-link">
                 <span>Comunidad</span>
               </a>
             </li> -->
-            <li class="nav-item">
-              <a href="#seccion-noticias" class="nav-link">
-                <span>Noticias</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <div class="main-body">
-      <section class="hero mb-5">
-        <div class="main-banner">
-          <div class="py-4 py-md-5 container">
-            <div class="col-12 col-md-9 p-0" data-aos="fade-right">
-              <h1 class="mb-0 mb-md-5">
-                Conocé Obelisco, el sistema de diseño del Gobierno de la Ciudad
-                de Buenos Aires.
-              </h1>
-              <div class="hero-icons">
-                <div class="card p-3 wave-animation delay-1">
-                  <span class="material-icons-round"> home </span>
-                </div>
-                <div class="card p-3 wave-animation delay-2">
-                  <span class="material-icons-round"> unfold_more </span>
-                </div>
-                <div class="card p-3 wave-animation delay-3">
-                  <span class="material-icons-round"> text_increase </span>
-                </div>
-                <div class="card p-3 wave-animation delay-4">
-                  <span class="material-icons-round"> gps_fixed </span>
-                </div>
-                <div class="card p-3 wave-animation delay-5">
-                  <span class="material-icons-round"> toggle_off </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="container">
-        <section id="seccion-obelisco">
-          <article class="mb-5">
-            <h2>Acerca de Obelisco</h2>
-            <p class="lead">
-              Obelisco es el sistema de diseño del Gobierno de la Ciudad de
-              Buenos Aires. Una guía de recursos y herramientas creada por y
-              para los ciudadanos/as. Buscamos brindar soluciones de diseño
-              tanto a áreas internas de Gobierno como a proveedores, poniendo el
-              foco en la accesibilidad y los estándares de usabilidad que nos
-              acercan a una experiencia ideal para las personas.
-            </p>
-          </article>
-        </section>
-
-        <section class="panels" id="seccion-herramientas">
-          <h2 class="mb-4">Utilizá obelisco</h2>
-
-          <div
-            class="card card-simple panel-horizontal mb-5"
-            data-aos="fade-left"
-          >
-            <img
-              src="img/panel/panel.svg"
-              class="card-img"
-              alt="descripción alternativa"
-            />
-            <div class="card-body">
-              <h2 class="card-title">Figma UI Kit</h2>
-              <p class="card-text">
-                El UI KIT de Obelisco contiene los componentes y guía de estilos
-                para implementar en tu proyecto.
-              </p>
-              <div class="panel-footer">
-                <a
-                  class="btn btn-secondary btn-lg btn-icon card-link"
-                  href="./img/ui-kit/UI_KIT_Obelisco.fig"
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Enlace de descarga de UI KIT."
-                >
-                  <span class="material-icons-round">file_download</span>
-                  Descargar UI Kit
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card card-simple panel-horizontal mb-5"
-            data-aos="fade-left"
-          >
-            <img
-              src="img/panel/panel1.svg"
-              class="card-img"
-              alt="descripción alternativa"
-            />
-            <div class="card-body">
-              <h2 class="card-title">Sistema y estándares</h2>
-              <p class="card-text">
-                Conocé los estándares de desarrollo e implementación para los
-                productos digitales del GCBA impulsados por la ASI (Agencia de
-                Sistemas de Información).
-              </p>
-              <div class="panel-footer">
-                <a
-                  href="https://gcba.github.io/estandares/"
-                  class="btn btn-primary btn-lg card-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Enlace a Sistema y estandares de obelisco."
-                >
-                  Ir a sistema de estándares
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card card-simple panel-horizontal mb-5"
-            data-aos="fade-left"
-          >
-            <img
-              src="img/panel/panel2.svg"
-              class="card-img"
-              alt="descripción alternativa"
-            />
-            <div class="card-body">
-              <h2 class="card-title">Storybook</h2>
-              <p class="card-text">
-                Obelisco es el nuevo sistema de diseño basado en componentes
-                para los productos digitales de la ciudad de Buenos Aires. Fue
-                creado para reemplazar BAstrap.
-              </p>
-              <div class="panel-footer">
-                <a
-                  href="https://gcba.github.io/Obelisco/?path=/story/comenzar-inicio--instalacion"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary btn-lg card-link"
-                  aria-label="Enlace a herramienta Obelisco."
-                >
-                  Ir a storybook
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="col-12 col-md-8 mb-5 p-0" id="seccion-nosotros">
-          <h2 class="mb-3">Quiénes somos</h2>
-          <p>
-            El equipo de Experiencia Digital lanza la primer versión 1.0 del
-            sistema de diseño Obelisco y estándares para los productos digitales
-            de la ciudad. Esto incluye documentación y herramientas para
-            trabajar sobre productos y servicios. Los archivos de diseño y
-            desarrollo para cada componente, así como también las primeras
-            fichas sobre los componentes para ayudar a los equipos de diferentes
-            áreas de gobierno y a proveedores a adoptar el Sistema de Diseño en
-            sus proyectos.
-          </p>
-
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <button
-                class="card-header collapsed card-link"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-              >
-                Historia
-              </button>
-              <div id="collapseOne" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Los estándares y el sistema de diseño Obelisco, esta
-                  construido por un equipo colaborativo en experiencia digital.
-                  Desde noviembre del 2018 trabajamos en generar estándares de
-                  usabilidad y accesibilidad sobre los formularios. A partir de
-                  marzo del 2020, desde la nueva Subsecretaría de Experiencia
-                  Digital paso a ser un proyecto en los que durante 8 meses de
-                  trabajo en un equipo colaborativo con intermitencias de
-                  proyectos satélites se puedo llevar adelante el comienzo de la
-                  primera versión del proyecto.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="mb-5 pb-5" id="seccion-noticias">
-          <div class="mb-4">
-            <h2>Te puede interesar</h2>
-          </div>
-
-          <div data-aos="fade-right">
-            <div class="card-deck max-cards-3 card-column">
-              <a
-                class="card"
-                href="https://documentosboletinoficial.buenosaires.gob.ar/publico/ck_PE-RES-MJGGC-SECITD-94-23-6626.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Enlace a resolución."
-              >
-                <img
-                  src="./img/card/homev1.svg"
-                  class="card-img-top"
-                  alt="descripción alternativa"
-                />
-                <div class="card-body">
-                  <div class="mb-2">
-                    <span class="badge badge-info">comunicación</span>
-                  </div>
-                  <h4 class="card-title">Conocé nuestra resolución</h4>
-                  <p class="card-text">
-                    Descargá la resolución publicada en el Boletín Oficial del
-                    Gobierno de la Ciudad de Buenos Aires.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small>Fecha de publicación: 17/05/2023</small>
-                </div>
-              </a>
-              <a
-                class="card"
-                href="https://gcba.github.io/obelisco-demo/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Enlace a templates de ejemplo."
-              >
-                <img
-                  src="./img/card/homev1.svg"
-                  class="card-img-top"
-                  alt="descripción alternativa"
-                />
-                <div class="card-body">
-                  <div class="mb-2">
-                    <span class="badge badge-info">Buenas Prácticas</span>
-                    <span class="badge badge-info">comunicación</span>
-                  </div>
-                  <h4 class="card-title">Mirá todas las plantillas</h4>
-                  <p class="card-text">
-                    Para ahorrar tiempo y optimizar tu trabajo, te facilitamos
-                    plantillas
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small>Fecha de publicación: 1/7/2023</small>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
+          <li class="nav-item">
+            <a href="#seccion-noticias" class="nav-link">
+              <span>Noticias</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+  </header>
 
-    <footer class="main-footer pb-0">
-      <div class="container">
-        <section class="footer-legal-section mb-4">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 col-xl-4 footer-content-img mb-0">
-              <img
-                class="d-lg-none"
-                src="./img/footer/ciudad-ba-sm.svg"
-                alt="Ciudad de Buenos Aires"
-                height="48"
-              />
-              <img
-                class="d-none d-lg-inline"
-                src="./img/footer/ciudad-ba.svg"
-                alt="Ciudad de Buenos Aires"
-                height="40"
-              />
-              <div class="divisor"></div>
-              <img
-                class="img-vamos-ba"
-                src="./img/footer/vamos-ba.svg"
-                alt="Vamos Buenos Aires"
-              />
+  <div class="main-body">
+    <section class="hero mb-5">
+      <div class="main-banner">
+        <div class="py-4 py-md-5 container">
+          <div class="col-12 col-md-9 p-0" data-aos="fade-right">
+            <h1 class="mb-0 mb-md-5">
+              Conocé Obelisco, el sistema de diseño del Gobierno de la Ciudad
+              de Buenos Aires.
+            </h1>
+            <div class="hero-icons">
+              <div class="card p-3 wave-animation delay-1">
+                <span class="material-icons-round"> home </span>
+              </div>
+              <div class="card p-3 wave-animation delay-2">
+                <span class="material-icons-round"> unfold_more </span>
+              </div>
+              <div class="card p-3 wave-animation delay-3">
+                <span class="material-icons-round"> text_increase </span>
+              </div>
+              <div class="card p-3 wave-animation delay-4">
+                <span class="material-icons-round"> gps_fixed </span>
+              </div>
+              <div class="card p-3 wave-animation delay-5">
+                <span class="material-icons-round"> toggle_off </span>
+              </div>
             </div>
           </div>
-        </section>
-        <img
-          class="header-logo-obelisco mb-4"
-          src="img/footer/Obelisco-logo-footer.svg"
-          alt="Ciudad de Buenos Aires"
-        />
-        <section class="mb-4">
-          <h4 class="mb-3">Redes de la ciudad</h4>
-          <ul class="list-inline">
-            <li class="list-inline-item redes-items">
-              <a href="https://github.com/gcba">
-                <i class="bx bxl-github" style="color: #ffffff"></i>Github
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a href="https://dribbble.com/ExperieniciadigitalBA">
-                <i class="bx bxl-dribbble" style="color: #ffffff"></i>Dribbble
-              </a>
-            </li>
-            <li class="list-inline-item redes-items">
-              <a
-                href="https://www.linkedin.com/company/secretar%C3%ADa-de-innovaci%C3%B3n-y-transformaci%C3%B3n-digital/mycompany/"
-              >
-                <i class="bx bxl-linkedin-square" style="color: #ffffff"></i
-                >Linkedin
-              </a>
-            </li>
-          </ul>
-        </section>
+        </div>
       </div>
-      <section>
-        <div class="footer-license-text bg-white py-4">
-          <div class="container footer-text">
-            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-            Commons Reconocimiento 2.5 Argentina License.
+    </section>
+
+    <div class="container">
+      <section id="seccion-obelisco">
+        <article class="mb-5">
+          <h2>Acerca de Obelisco</h2>
+          <p class="lead">
+            Obelisco es el sistema de diseño del Gobierno de la Ciudad de
+            Buenos Aires. Una guía de recursos y herramientas creada por y
+            para los ciudadanos/as. Buscamos brindar soluciones de diseño
+            tanto a áreas internas de Gobierno como a proveedores, poniendo el
+            foco en la accesibilidad y los estándares de usabilidad que nos
+            acercan a una experiencia ideal para las personas.
+          </p>
+        </article>
+      </section>
+
+      <section class="panels" id="seccion-herramientas">
+        <h2 class="mb-4">Utilizá obelisco</h2>
+
+        <div class="card card-simple panel-horizontal mb-5" data-aos="fade-left">
+          <img src="img/panel/panel.svg" class="card-img" alt="descripción alternativa" />
+          <div class="card-body">
+            <h2 class="card-title">Figma UI Kit</h2>
+            <p class="card-text">
+              El UI KIT de Obelisco contiene los componentes y guía de estilos
+              para implementar en tu proyecto.
+            </p>
+            <div class="panel-footer">
+              <a class="btn btn-secondary btn-lg btn-icon card-link" href="./img/ui-kit/UI_KIT_Obelisco.fig" download
+                target="_blank" rel="noopener noreferrer" aria-label="Enlace de descarga de UI KIT.">
+                <span class="material-icons-round">file_download</span>
+                Descargar UI Kit
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-simple panel-horizontal mb-5" data-aos="fade-left">
+          <img src="img/panel/panel1.svg" class="card-img" alt="descripción alternativa" />
+          <div class="card-body">
+            <h2 class="card-title">Sistema y estándares</h2>
+            <p class="card-text">
+              Conocé los estándares de desarrollo e implementación para los
+              productos digitales del GCBA impulsados por la ASI (Agencia de
+              Sistemas de Información).
+            </p>
+            <div class="panel-footer">
+              <a href="https://gcba.github.io/estandares/" class="btn btn-primary btn-lg card-link" target="_blank"
+                rel="noopener noreferrer" aria-label="Enlace a Sistema y estandares de obelisco.">
+                Ir a sistema de estándares
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-simple panel-horizontal mb-5" data-aos="fade-left">
+          <img src="img/panel/panel2.svg" class="card-img" alt="descripción alternativa" />
+          <div class="card-body">
+            <h2 class="card-title">Storybook</h2>
+            <p class="card-text">
+              Obelisco es el nuevo sistema de diseño basado en componentes
+              para los productos digitales de la ciudad de Buenos Aires. Fue
+              creado para reemplazar BAstrap.
+            </p>
+            <div class="panel-footer">
+              <a href="https://gcba.github.io/Obelisco/?path=/story/comenzar-inicio--instalacion" target="_blank"
+                rel="noopener noreferrer" class="btn btn-primary btn-lg card-link"
+                aria-label="Enlace a herramienta Obelisco.">
+                Ir a storybook
+              </a>
+            </div>
           </div>
         </div>
       </section>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+      <section class="col-12 col-md-8 mb-5 p-0" id="seccion-nosotros">
+        <h2 class="mb-3">Quiénes somos</h2>
+        <p>
+          El equipo de Experiencia Digital lanza la primer versión 1.0 del
+          sistema de diseño Obelisco y estándares para los productos digitales
+          de la ciudad. Esto incluye documentación y herramientas para
+          trabajar sobre productos y servicios. Los archivos de diseño y
+          desarrollo para cada componente, así como también las primeras
+          fichas sobre los componentes para ayudar a los equipos de diferentes
+          áreas de gobierno y a proveedores a adoptar el Sistema de Diseño en
+          sus proyectos.
+        </p>
+
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+              Historia
+            </button>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Los estándares y el sistema de diseño Obelisco, esta
+                construido por un equipo colaborativo en experiencia digital.
+                Desde noviembre del 2018 trabajamos en generar estándares de
+                usabilidad y accesibilidad sobre los formularios. A partir de
+                marzo del 2020, desde la nueva Subsecretaría de Experiencia
+                Digital paso a ser un proyecto en los que durante 8 meses de
+                trabajo en un equipo colaborativo con intermitencias de
+                proyectos satélites se puedo llevar adelante el comienzo de la
+                primera versión del proyecto.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5 pb-5" id="seccion-noticias">
+        <div class="mb-4">
+          <h2>Te puede interesar</h2>
+        </div>
+
+        <div data-aos="fade-right">
+          <div class="card-deck max-cards-3 card-column">
+            <a class="card"
+              href="https://documentosboletinoficial.buenosaires.gob.ar/publico/ck_PE-RES-MJGGC-SECITD-94-23-6626.pdf"
+              target="_blank" rel="noopener noreferrer" aria-label="Enlace a resolución.">
+              <img src="./img/card/homev1.svg" class="card-img-top" alt="descripción alternativa" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge badge-info">comunicación</span>
+                </div>
+                <h4 class="card-title">Conocé nuestra resolución</h4>
+                <p class="card-text">
+                  Descargá la resolución publicada en el Boletín Oficial del
+                  Gobierno de la Ciudad de Buenos Aires.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small>Fecha de publicación: 17/05/2023</small>
+              </div>
+            </a>
+            <a class="card" href="https://gcba.github.io/obelisco-demo/index.html" target="_blank"
+              rel="noopener noreferrer" aria-label="Enlace a templates de ejemplo.">
+              <img src="./img/card/homev1.svg" class="card-img-top" alt="descripción alternativa" />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge badge-info">Buenas Prácticas</span>
+                  <span class="badge badge-info">comunicación</span>
+                </div>
+                <h4 class="card-title">Mirá todas las plantillas</h4>
+                <p class="card-text">
+                  Para ahorrar tiempo y optimizar tu trabajo, te facilitamos
+                  plantillas
+                </p>
+              </div>
+              <div class="card-footer">
+                <small>Fecha de publicación: 1/7/2023</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer class="main-footer pb-0">
+    <div class="container">
+      <section class="footer-legal-section mb-4">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 footer-content-img mb-0">
+            <img class="d-lg-none" src="./img/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
+            <img class="d-none d-lg-inline" src="./img/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires" height="40" />
+            <div class="divisor"></div>
+            <img class="img-vamos-ba" src="./img/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
+          </div>
+        </div>
+      </section>
+      <img class="header-logo-obelisco mb-4" src="img/footer/Obelisco-logo-footer.svg" alt="Ciudad de Buenos Aires" />
+      <section class="mb-4">
+        <h4 class="mb-3">Redes de la ciudad</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item redes-items">
+            <a href="https://github.com/gcba">
+              <i class="bx bxl-github" style="color: #ffffff"></i>Github
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a href="https://dribbble.com/ExperieniciadigitalBA">
+              <i class="bx bxl-dribbble" style="color: #ffffff"></i>Dribbble
+            </a>
+          </li>
+          <li class="list-inline-item redes-items">
+            <a
+              href="https://www.linkedin.com/company/secretar%C3%ADa-de-innovaci%C3%B3n-y-transformaci%C3%B3n-digital/mycompany/">
+              <i class="bx bxl-linkedin-square" style="color: #ffffff"></i>Linkedin
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section>
+      <div class="footer-license-text bg-white py-4">
+        <div class="container footer-text">
+          Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+          Commons Reconocimiento 2.5 Argentina License.
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
