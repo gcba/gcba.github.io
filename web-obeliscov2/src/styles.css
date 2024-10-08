@@ -1,0 +1,159 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@gcba/obelisco-v2/dist/styles.css";
+
+html, body {
+    scroll-behavior: smooth; /* Habilita el scroll suave en los navegadores que lo soportan */
+  }
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+  }
+  html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .main-body {
+    overflow-x: hidden;
+  }
+  
+  section {
+    scroll-margin-top: 110px;
+    scroll-behavior: smooth;
+  }
+  @media (max-width: 767px) {
+    section {
+      scroll-margin-top: 80px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #seccion-nosotros {
+      margin-top: 90px;
+    }
+  }
+  @media (max-width: 752px) {
+    .navbar.navbar-light {
+      padding: 0.88rem 1rem;
+    }
+  }
+  @media (min-width: 752px) {
+    .navbar.navbar-light {
+      height: 5.5rem;
+    }
+  }
+  .navbar.navbar-light.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+  }
+  @media (min-width: 752px) {
+    .navbar.navbar-light.sticky-header .container {
+      flex-wrap: nowrap;
+    }
+  }
+  .navbar.navbar-light.sticky-header .container .header-logo-obelisco {
+    width: 8rem;
+  }
+  .navbar.navbar-light.sticky-header .container .navbar-toggler {
+    box-shadow: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    height: 44px;
+    width: 44px;
+  }
+  .navbar.navbar-light.sticky-header .container .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.33333 24H26.6667C27.4 24 28 23.4 28 22.6667C28 21.9333 27.4 21.3333 26.6667 21.3333H5.33333C4.6 21.3333 4 21.9333 4 22.6667C4 23.4 4.6 24 5.33333 24ZM5.33333 17.3333H26.6667C27.4 17.3333 28 16.7333 28 16C28 15.2667 27.4 14.6667 26.6667 14.6667H5.33333C4.6 14.6667 4 15.2667 4 16C4 16.7333 4.6 17.3333 5.33333 17.3333ZM4 9.33333C4 10.0667 4.6 10.6667 5.33333 10.6667H26.6667C27.4 10.6667 28 10.0667 28 9.33333C28 8.6 27.4 8 26.6667 8H5.33333C4.6 8 4 8.6 4 9.33333Z' fill='%2338485C'/%3e%3c/svg%3e") !important;
+  }
+  .navbar.navbar-light.sticky-header .container .navbar-collapse .nav .nav-item .nav-link {
+    line-height: 24px;
+  }
+  .navbar.navbar-light.sticky-header .container .navbar-collapse .nav .nav-item .nav-link span {
+    font-size: 1.125rem;
+  }
+  
+  .hero .main-banner {
+    background-image: url("./assets/hero/hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-height: 280px;
+    padding-bottom: 1.5rem;
+    margin-top: 5rem;
+    padding-top: 0.5rem;
+  }
+  @media (max-width: 1100px) {
+    .hero .main-banner {
+      background-image: url("./assets/hero/mobile.svg");
+      padding-bottom: 0;
+      min-height: auto;
+      margin-top: 4rem;
+    }
+  }
+  .hero .main-banner .hero-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 0.5rem;
+  }
+  @media (max-width: 540px) {
+    .hero .main-banner .hero-icons {
+      display: none;
+    }
+  }
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .hero .main-banner .card {
+    animation: wave 1s infinite;
+    max-width: 56px;
+  }
+  .hero .main-banner .delay-1 {
+    animation-delay: 0.1s;
+  }
+  .hero .main-banner .delay-2 {
+    animation-delay: 0.2s;
+  }
+  .hero .main-banner .delay-3 {
+    animation-delay: 0.3s;
+  }
+  .hero .main-banner .delay-4 {
+    animation-delay: 0.4s;
+  }
+  .hero .main-banner .delay-5 {
+    animation-delay: 0.5s;
+  }
+  
+  .footer-text {
+    color: #38485c;
+  }
+  
+  .divisor {
+    background: #FFDB2E;
+    min-width: 3px;
+    border-radius: 5px;
+  }
+  @media (max-width: 340px) {
+    .divisor {
+      display: none;
+    }
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
