@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@gcba/obelisco-v2/dist/styles.css";
 
-html, body {
-    scroll-behavior: smooth; /* Habilita el scroll suave en los navegadores que lo soportan */
+/* html, body {
+    scroll-behavior: smooth; /* Habilita el scroll suave en los navegadores que lo soportan **
   }
   html::-webkit-scrollbar, body::-webkit-scrollbar {
     width: 8px;
@@ -78,17 +78,24 @@ html, body {
   }
   .navbar.navbar-light.sticky-header .container .navbar-collapse .nav .nav-item .nav-link span {
     font-size: 1.125rem;
+  } */
+
+  @media (min-width: 1200px) {
+    .navbar.o-header .header-container .navbar-brand .header-logo {
+        width: 130px;
+    }
   }
   
   .hero .main-banner {
-    background-image: url("./assets/hero/hero.svg");
+    background-image: url("./assets/hero/hero-encabezado.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right top;
     min-height: 280px;
     padding-bottom: 1.5rem;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     padding-top: 0.5rem;
+    color: #fff;
   }
   @media (max-width: 1100px) {
     .hero .main-banner {
@@ -102,7 +109,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   }
   @media (max-width: 540px) {
     .hero .main-banner .hero-icons {
