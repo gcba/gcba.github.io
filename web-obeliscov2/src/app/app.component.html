@@ -1,5 +1,5 @@
 <body>
-  <header class="navbar navbar-light sticky-header">
+  <!-- <header class="navbar navbar-light sticky-header">
     <div class="container">
       <img class="header-logo-obelisco" src="./../assets/header/Obelisco-logo.svg" alt="Ciudad de Buenos Aires" />
       <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -27,17 +27,51 @@
         </ul>
       </div>
     </div>
-  </header>
+  </header>  -->
+
+
+<header class="o-header navbar" role="banner">
+  <a href="#main" class="skip-to-main-content-link">Saltar al contenido principal</a>
+  <div class="container header-container">
+    <a class="navbar-brand" href="/Obelisco-V2">
+      <img alt="Gobierno de la Ciudad de Buenos Aires - Inicio" class="header-logo" style="color:transparent"
+        src="./../assets/header/Obelisco-logo.svg">
+    </a>
+    <button class="navbar-toggler d-inline-block d-xl-none" type="button" aria-label="Menú" aria-expanded="false"></button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <div class="d-none d-xl-block">
+        <div class="navbar-content">
+          <div class="navbar-sections">
+            <nav>              
+              <ul class="nav nav-pills nav-sections">
+                <li class="nav-item"><a class="nav-link nav-link-lg "
+                    href="/Obelisco-V2/getting-started"><span>Inicio</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg"
+                    href="/Obelisco-V2/components"><span>Elementos</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg "
+                    href="/Obelisco-V2/documentation"><span>Documentación</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
   
   <div class="main-body">
     <section class="hero mb-5">
       <div class="main-banner">
         <div class="py-5 container">
-          <div class="col-12 col-md-9 py-1 py-md-0 px-0" data-aos="fade-right">
+          <div class="col-12 col-md-9 py-1 py-md-0 px-0" > <!--data-aos="fade-right" -->
             <h1 class="mb-0 mb-md-5">
-              Conocé Obelisco, el sistema de diseño del Gobierno de la Ciudad
-              de Buenos Aires.
+              Utilizá Obelisco, el sistema de diseño del <br> Gobierno de la Ciudad de Buenos Aires
             </h1>
+            <p class="text-xl mb-2">Nuestro sistema de estándares de código abierto proporciona herramientas y <br> 
+              componentes reutilizables con las que construimos productos digitales <br> 
+              accesibles para la Ciudad.</p>
             <div class="hero-icons">
               <div class="card p-3 wave-animation delay-1">
                 <span class="material-icons-round"> home </span>
@@ -93,40 +127,45 @@
       <section class="panels" id="seccion-herramientas">
         <h2 class="mb-4">Utilizá obelisco</h2>
 
-        <div class="card card-simple panel-horizontal mb-5" data-aos="fade-left">
-          <img src="./../assets/panel/panel.svg" class="card-img" alt="descripción alternativa" />
-          <div class="card-body">
-            <h2 class="card-title">Figma UI Kit</h2>
-            <p class="card-text">
-              Simplificá tu proyecto con nuestra librería de componentes y guía de estilos, para una implementación ágil y sencilla. 
-            </p>
-            <div class="panel-footer">
-              <a class="btn btn-secondary btn-lg btn-icon card-link" href="./img/ui-kit/UI_KIT_-_Obelisco.fig" download
-                target="_blank" rel="noopener noreferrer" aria-label="Enlace de descarga de UI KIT.">
-                <span class="material-icons-round">file_download</span>
-                Descargar UI Kit
-              </a>
+        <div class="panel-horizontal-content">
+          <div class="panel-horizontal mb-5" > <!-- data-aos="fade-left"-->
+            <img src="./../assets/panel/panel.svg" class="card-img" alt="descripción alternativa" />
+            <div class="card-body">
+              <h2 class="card-title">Figma UI Kit</h2>
+              <p class="card-text">
+                Simplificá tu proyecto con nuestra librería de componentes y guía de estilos, para una implementación ágil y sencilla. 
+              </p>
+              <div class="panel-footer">
+                <a class="btn btn-secondary btn-lg btn-icon card-link" href="./img/ui-kit/UI_KIT_-_Obelisco.fig" download
+                  target="_blank" rel="noopener noreferrer" aria-label="Enlace de descarga de UI KIT.">
+                  <span class="material-icons-round o-icon">file_download</span>
+                  Descargar UI Kit
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card card-simple panel-horizontal mb-5" data-aos="fade-left">
-          <img src="./../assets/panel/panel1.svg" class="card-img" alt="descripción alternativa" />
-          <div class="card-body">
-            <h2 class="card-title">Sistema y estándares</h2>
-            <p class="card-text">
-              Conocé las características que deben cumplir los desarrollos digitales para el Gobierno de la Ciudad de Buenos Aires impulsados por la Agencia de Sistemas de Información.
-            </p>
-            <div class="panel-footer">
-              <a href="https://gcba.github.io/estandares/" class="btn btn-primary btn-lg card-link" target="_blank"
-                rel="noopener noreferrer" aria-label="Enlace a Sistema y estandares de obelisco.">
-                Explorar sistema
-              </a>
+        <div class="panel-horizontal-content">
+          <div class="panel-horizontal mb-5" > <!--data-aos="fade-left" -->
+            <img src="./../assets/panel/panel1.svg" class="card-img" alt="descripción alternativa" />
+            <div class="card-body">
+              <h2 class="card-title">Sistema y estándares</h2>
+              <p class="card-text">
+                Conocé las características que deben cumplir los desarrollos digitales para el Gobierno de la Ciudad de Buenos Aires impulsados por la Agencia de Sistemas de Información.
+              </p>
+              <div class="panel-footer">
+                <a href="https://gcba.github.io/estandares/" class="btn btn-primary btn-lg card-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="Enlace a Sistema y estandares de obelisco.">
+                  Explorar sistema
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card card-simple panel-horizontal mb-5" data-aos="fade-left">
+        <div class="panel-horizontal-content">
+        <div class="panel-horizontal mb-5" > <!-- data-aos="fade-left"-->
           <img src="./../assets/panel/panel2.svg" class="card-img" alt="descripción alternativa" />
           <div class="card-body">
             <h2 class="card-title">Storybook</h2>
@@ -142,6 +181,7 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       <section class="col-12 col-md-8 mb-5 p-0" id="seccion-nosotros">
@@ -163,12 +203,12 @@
         </p>
 
         <div class="accordion" id="accordionExample">
-          <div class="card">
-            <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
-              Historia
+          <div class="accordion-item">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <span class="collapse-title">Historia</span>
             </button>
-            <div id="collapseOne" class="collapse" data-parent="#accordion">
-              <div class="card-body">
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
                 Los estándares y el sistema de diseño Obelisco están construidos por un equipo colaborativo en experiencia digital. Desde noviembre de 2018, trabajamos en generar estándares de usabilidad y accesibilidad para los formularios. 
                 <br/>
                 <br/>
@@ -184,50 +224,64 @@
       </section>
 
       <section class="mb-5 pb-5" id="seccion-noticias">
+
         <div class="mb-4">
           <h2>Te puede interesar</h2>
         </div>
-
-        <div data-aos="fade-right">
-          <div class="card-deck max-cards-3 card-column">
-            <a class="card"
-              href="https://documentosboletinoficial.buenosaires.gob.ar/publico/ck_PE-RES-MJGGC-SECITD-94-23-6626.pdf"
-              target="_blank" rel="noopener noreferrer" aria-label="Enlace a resolución.">
-              <img src="./../assets/card/homev1.svg" class="card-img-top" alt="descripción alternativa" />
+        <!-- data-aos="fade-right"-->
+        <div class="card-items-3">
+          <div class="col">
+            <div class="card">
+              <img src="./../assets/card/homev1.svg" class="card-img" alt="descripción alternativa" />
               <div class="card-body">
-                <div class="mb-2">
+                <div class="card-badges">
                   <span class="badge badge-info">comunicación</span>
                 </div>
-                <h4 class="card-title">Conocé nuestra resolución</h4>
+                <h3 class="card-title">
+                  <a class="card-title-link"
+                    href="https://documentosboletinoficial.buenosaires.gob.ar/publico/ck_PE-RES-MJGGC-SECITD-94-23-6626.pdf"
+                    target="_blank" rel="noopener noreferrer" aria-label="Enlace a resolución.">Conocé nuestra resolución</a>
+                </h3>
                 <p class="card-text">
                   Descargá la resolución publicada en el Boletín Oficial del
                   Gobierno de la Ciudad de Buenos Aires.
                 </p>
+                <div class="card-info">
+                  <div>
+                    <small>Fecha de publicación: 17/05/2023</small>
+                  </div>
+                </div>
               </div>
-              <div class="card-footer">
-                <small>Fecha de publicación: 17/05/2023</small>
-              </div>
-            </a>
-            <a class="card" href="https://gcba.github.io/obelisco-demo/index.html" target="_blank"
-              rel="noopener noreferrer" aria-label="Enlace a templates de ejemplo.">
-              <img src="./../assets/card/homev1.svg" class="card-img-top" alt="descripción alternativa" />
+            </div>
+            </div>
+            <div class="col">
+            <div class="card">
+              <img src="./../assets/card/homev1.svg" class="card-img" alt="descripción alternativa" />
               <div class="card-body">
-                <div class="mb-2">
+                <div class="card-badges">
                   <span class="badge badge-info">Buenas Prácticas</span>
                   <span class="badge badge-info">comunicación</span>
                 </div>
-                <h4 class="card-title">Mirá todas las plantillas</h4>
+                <h3 class="card-title">
+                  <a class="card-title-link" href="https://gcba.github.io/obelisco-demo/index.html" target="_blank"
+                    rel="noopener noreferrer" aria-label="Enlace a templates de ejemplo.">Mirá todas las plantillas
+                  </a>
+                </h3>
                 <p class="card-text">
                   Para ahorrar tiempo y optimizar tu trabajo, te facilitamos
                   plantillas
                 </p>
+              
+              <div class="card-info">
+                <div>
+                  <small>Fecha de publicación: 1/7/2023</small>
+                </div>
               </div>
-              <div class="card-footer">
-                <small>Fecha de publicación: 1/7/2023</small>
-              </div>
-            </a>
+            </div>
+            </div>
           </div>
         </div>
+      
       </section>
     </div>
   </div>
