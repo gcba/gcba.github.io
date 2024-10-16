@@ -1,0 +1,29 @@
+<header class="o-header navbar" role="banner">
+    <a href="#main" class="skip-to-main-content-link">Saltar al contenido principal</a>
+    <div class="container header-container">
+        <a class="navbar-brand" [routerLink]="'/home'">
+            <img alt="Gobierno de la Ciudad de Buenos Aires - Inicio" class="header-logo" style="color:transparent"
+                src="./../assets/header/Obelisco-logo.svg">
+        </a>
+        <button class="navbar-toggler d-inline-block d-xl-none" type="button" aria-label="Menú"
+            aria-expanded="false"></button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <div class="d-none d-xl-block">
+                <div class="navbar-content">
+                    <div class="navbar-sections">
+                        <nav>
+                            <ul class="nav nav-pills nav-sections">
+                                <li class="nav-item"><a class="nav-link nav-link-lg "
+                                        [routerLink]="'/home'"><span>Inicio</span></a></li>
+                                <li class="nav-item"><a class="nav-link nav-link-lg "
+                                        [routerLink]="'/components'"><span>Elementos</span></a></li>
+                                <li class="nav-item"><a class="nav-link nav-link-lg "
+                                        [routerLink]="'/documentation'"><span>Documentación</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
