@@ -1,0 +1,43 @@
+.hero .main-banner {
+  background-image: url("../../../assets/hero/hero-v2.svg");
+  background-color: #101e37;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 280px;
+  color: #fff;
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .hero-subtitle {
+    margin-bottom: 2rem;
+  }
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+  }
+
+  //Estilos en tablet para que se visualice correctamente la imagen
+  @media (min-width: 768px) and (max-width: 1399.98px) {
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  //Estilos en mobile
+  @media (max-width: 767.98px) {
+    background-image: url("../../../assets/hero/hero-v2-mobile.svg");
+    min-height: auto;
+    background-position: bottom;
+    .container {
+      padding-top: 1.5rem;
+      padding-bottom: 8rem;
+    }
+    .hero-subtitle {
+      margin-bottom: 1rem;
+    }
+    .hero-cta {
+      flex-direction: column;
+    }
+  }
+}

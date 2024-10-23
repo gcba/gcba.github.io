@@ -1,29 +1,55 @@
 <header class="o-header navbar" role="banner">
-    <a href="#main" class="skip-to-main-content-link">Saltar al contenido principal</a>
-    <div class="container header-container">
-        <a class="navbar-brand" [routerLink]="'/home'">
-            <img alt="Gobierno de la Ciudad de Buenos Aires - Inicio" class="header-logo" style="color:transparent"
-                src="./../assets/header/Obelisco-logo.svg">
-        </a>
-        <button class="navbar-toggler d-inline-block d-xl-none" type="button" aria-label="Menú"
-            aria-expanded="false"></button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <div class="d-none d-xl-block">
-                <div class="navbar-content">
-                    <div class="navbar-sections">
-                        <nav>
-                            <ul class="nav nav-pills nav-sections">
-                                <li class="nav-item"><a class="nav-link nav-link-lg "
-                                        [routerLink]="'/home'"><span>Inicio</span></a></li>
-                                <li class="nav-item"><a class="nav-link nav-link-lg "
-                                        [routerLink]="'/components'"><span>Elementos</span></a></li>
-                                <li class="nav-item"><a class="nav-link nav-link-lg "
-                                        [routerLink]="'/documentation'"><span>Documentación</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+  <a href="#main" class="skip-to-main-content-link">
+    Saltar al contenido principal
+  </a>
+  <div class="container header-container">
+    <a [routerLink]="'/home'" class="navbar-brand">
+      <img
+        class="d-none d-xl-block"
+        src="./../assets/header/logo_obelisco.svg"
+        alt="Obelisco"
+      />
+      <img
+        class="d-xl-none"
+        src="./../assets/header/logo_obelisco_mobile.svg"
+        alt="Obelisco"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarHomeObelisco"
+      aria-controls="navbarHomeObelisco"
+      aria-expanded="false"
+      aria-label="Menú"
+    ></button>
+    <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <p class="navbar-sections-title">Secciones</p>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item">
+                <a class="nav-link nav-link-lg" href="https://gcba.github.io/Obelisco-V2/getting-started"
+                  ><span>Empezar con Obelisco</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-lg" href="https://gcba.github.io/Obelisco-V2/components"
+                  ><span>Librería</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-lg" href="https://gcba.github.io/Obelisco-V2/documentation"
+                  ><span>Obelisco V2</span></a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="header-backdrop"></div>
 </header>
