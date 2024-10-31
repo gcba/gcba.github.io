@@ -1,0 +1,82 @@
+@media (min-width: 1200px) {
+    .navbar.o-header .header-container .navbar-brand .header-logo {
+        width: 130px;
+    }
+  }
+  
+  .hero .main-banner {
+    // background-image: url("./assets/hero/hero-encabezado.svg");
+    background-image: url("./../../../assets/hero/hero-v1/hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-height: 280px;
+    padding-bottom: 1.5rem;
+    /* margin-top: 5rem; */
+    padding-top: 0.5rem;
+    color: #38485c;
+  }
+  @media (max-width: 1100px) {
+    .hero .main-banner {
+      background-image: url("./../../../assets/hero/hero-v1/mobile.svg");
+      padding-bottom: 0;
+      min-height: auto;
+      margin-top: 4rem;
+    }
+  }
+  .hero .main-banner .hero-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 540px) {
+    .hero .main-banner .hero-icons {
+      display: none;
+    }
+  }
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .hero .main-banner .card {
+    animation: wave 1s infinite;
+    max-width: 56px;
+  }
+  .hero .main-banner .delay-1 {
+    animation-delay: 0.1s;
+  }
+  .hero .main-banner .delay-2 {
+    animation-delay: 0.2s;
+  }
+  .hero .main-banner .delay-3 {
+    animation-delay: 0.3s;
+  }
+  .hero .main-banner .delay-4 {
+    animation-delay: 0.4s;
+  }
+  .hero .main-banner .delay-5 {
+    animation-delay: 0.5s;
+  }
+  
+  .footer-text {
+    color: #38485c;
+  }
+  
+  .divisor {
+    background: #FFDB2E;
+    min-width: 3px;
+    border-radius: 5px;
+  }
+  @media (max-width: 340px) {
+    .divisor {
+      display: none;
+    }
+  }
