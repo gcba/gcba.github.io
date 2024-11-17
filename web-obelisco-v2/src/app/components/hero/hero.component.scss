@@ -11,7 +11,8 @@
     padding-bottom: 2rem;
   }
   .hero-subtitle {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 6rem;
   }
   .hero-cta {
     display: flex;
@@ -24,6 +25,11 @@
     background-position: bottom;
   }
 
+  @media (max-width: 1199.98px) {
+    .hero-subtitle {
+      margin-right: 0;
+    }
+  }
   //Estilos en mobile
   @media (max-width: 767.98px) {
     background-image: url("../../../assets/hero/hero-v2-mobile.svg");
