@@ -32,6 +32,6 @@ jobs:
         run: npm run build
 
       - name: Deploy to Github pages
-        run: ng deploy --base-href=/
         env:
-          CI: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ng deploy --base-href=/
