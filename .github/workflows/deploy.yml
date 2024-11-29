@@ -25,8 +25,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
       - name: Build
         run: npm run build
 
       - name: Deploy to Github pages
         run: ng deploy --base-href=/
+        env:
+          CI: true
