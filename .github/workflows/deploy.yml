@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy to Github pages
         run: |
-          npx angular-cli-ghpages --dir=dist/
+          npx angular-cli-ghpages --dir=docs/
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
