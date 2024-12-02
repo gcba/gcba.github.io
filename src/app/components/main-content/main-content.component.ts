@@ -35,7 +35,7 @@ export class MainContentComponent {
       text: 'Descubrí nuestros componentes accesibles para la creación y desarrollo de productos digitales.',
       link: 'https://gcba.github.io/Obelisco/?path=/story/comenzar-inicio--instalacion',
       ariaLabel: 'Enlace a herramienta Obelisco.',
-      buttonText: 'Conocer componentes'
+      buttonText: 'Conocer componentes -'
     }
   ];
   
